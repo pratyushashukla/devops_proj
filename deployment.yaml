@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devops_proj
+  name: devopsproj
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: devops_proj
+      app: devopsproj
   template:
     metadata:
       labels:
-        app: devops_proj
+        app: devopsproj
     spec:
       containers:
-        - name: devops_proj
+        - name: devopsproj
           image: shuklapratyusha/devops_repo:latest
           ports:
             - containerPort: 80
