@@ -1,24 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-app-deployment
-  labels:
-    app: react-app
+  name: devops_proj
 spec:
-  replicas: 3 # Number of replicas for scalability
+  replicas: 3
   selector:
     matchLabels:
-      app: react-app
+      app: devops_proj
   template:
     metadata:
       labels:
-        app: react-app
+        app: devops_proj
     spec:
       containers:
-        - name: react-container
+        - name: devops_proj
           image: shuklapratyusha/devops_repo:latest
           ports:
             - containerPort: 80
-          envFrom:
-            - configMapRef:
-                name: react-app-config
