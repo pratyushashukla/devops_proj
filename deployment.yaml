@@ -13,7 +13,7 @@ spec:
         app: devopsproj
     spec:
       containers:
-        - name: devopsproj
+        - name: react-container
           image: shuklapratyusha/devops_repo:latest
           ports:
             - containerPort: 80
