@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React along with round testing 5!
+          Learn React along with round testing 6!
         </a>
       </header>
     </div>
